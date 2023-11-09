@@ -1,5 +1,5 @@
-import styles from "./sidebar.module.css"
-import MenuLink from './menuLink/menuLink';
+import styles from "./sidebar.module.css";
+import MenuLink from "./menuLink/menuLink";
 import {
   MdDashboard,
   MdSupervisedUserCircle,
@@ -12,7 +12,7 @@ import {
   MdHelpCenter,
   MdLogout,
 } from "react-icons/md";
-import Image from 'next/image';
+import Image from "next/image";
 
 const menuItems = [
   {
@@ -78,11 +78,16 @@ const menuItems = [
 ];
 
 const Sidebar = () => {
-  
   return (
     <div className={styles.container}>
       <div className={styles.user}>
-        <Image className={styles.userImage} src="/noavatar.png" alt="" width="50" height="50" />
+        <Image
+          className={styles.userImage}
+          src="/noavatar.png"
+          alt=""
+          width="50"
+          height="50"
+        />
         <div className={styles.userDetail}>
           <span className={styles.username}>John Joe</span>
           <span className={styles.userTitle}>Adminstrator</span>
@@ -98,8 +103,12 @@ const Sidebar = () => {
           </li>
         ))}
       </ul>
+      <button className={styles.logout}>
+        <MdLogout />
+        Logout
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;
