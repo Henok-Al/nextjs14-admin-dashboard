@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Pagination from "@/app/ui/dashboard/pagination/pagination";
 import Search from "@/app/ui/dashboard/search/search";
-// import { searchParams } from "next/navigation";
 import { fetchProducts } from "@/app/lib/data";
 
 const ProductsPage = async ({ searchParams }) => {
