@@ -13,6 +13,7 @@ import {
   MdLogout,
 } from "react-icons/md";
 import Image from "next/image";
+import { UserButton } from "@clerk/nextjs";
 
 const menuItems = [
   {
@@ -81,13 +82,14 @@ const Sidebar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.user}>
-        <Image
+      <UserButton afterSignOutUrl="/dashboard"/>
+        {/* <Image
           className={styles.userImage}
           src="/noavatar.png"
           alt=""
           width="50"
           height="50"
-        />
+        /> */}
         <div className={styles.userDetail}>
           <span className={styles.username}>John Joe</span>
           <span className={styles.userTitle}>Adminstrator</span>
@@ -103,10 +105,10 @@ const Sidebar = () => {
           </li>
         ))}
       </ul>
-      <button className={styles.logout}>
+      {/* <button className={styles.logout}>
         <MdLogout />
         Logout
-      </button>
+      </button> */}
     </div>
   );
 };

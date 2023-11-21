@@ -7,7 +7,7 @@ const Rightbar = () => {
     <div className={styles.container}>
       <div className={styles.item}>
         <div className={styles.bgContainer}>
-          <Image src="/astronaut.png" alt="" fill className={styles.bg}/>
+          <Image src="/astronaut.png" alt="" sizes={60} fill className={styles.bg}/>
         </div>
         <div className={styles.text}>
           <span className={styles.notification}>🔥 Available Now</span>

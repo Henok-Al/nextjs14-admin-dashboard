@@ -1,0 +1,20 @@
+/* styles/Home.module.css */
+
+/* ... existing styles ... */
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Styling for Google Sign-In button */
+  .googleButton {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
