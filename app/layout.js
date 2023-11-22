@@ -4,8 +4,8 @@ import { ClerkProvider } from '@clerk/nextjs'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Lama Dev Next.js Admin Dashboard',
-  description: 'Next.js Tutorial',
+  title: 'Henoks Next.js Admin Dashboard',
+  description: 'Next.js Project',
 }
 
 export default function RootLayout({ children }) {
