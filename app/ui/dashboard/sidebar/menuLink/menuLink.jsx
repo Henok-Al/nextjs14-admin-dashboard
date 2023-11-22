@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import styles from "./menuLink.module.css";
 import Link from "next/link";
 
-const menuLink = ({ item }) => {
+const MenuLink = ({ item }) => {
   const pathname = usePathname();
   // console.log(pathname);
   return (
@@ -20,4 +20,4 @@ const menuLink = ({ item }) => {
   );
 };
 
-export default menuLink;
+export default MenuLink;

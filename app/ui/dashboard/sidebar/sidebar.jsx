@@ -10,9 +10,7 @@ import {
   MdPeople,
   MdOutlineSettings,
   MdHelpCenter,
-  MdLogout,
 } from "react-icons/md";
-import Image from "next/image";
 import { UserButton } from "@clerk/nextjs";
 
 const menuItems = [
@@ -82,16 +80,8 @@ const Sidebar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.user}>
-      <UserButton afterSignOutUrl="/dashboard"/>
-        {/* <Image
-          className={styles.userImage}
-          src="/noavatar.png"
-          alt=""
-          width="50"
-          height="50"
-        /> */}
+        <UserButton afterSignOutUrl="/dashboard" />
         <div className={styles.userDetail}>
-          {/* <span className={styles.username}>John Joe</span> */}
           <span className={styles.userTitle}>Adminstrator</span>
         </div>
       </div>
@@ -105,10 +95,7 @@ const Sidebar = () => {
           </li>
         ))}
       </ul>
-      {/* <button className={styles.logout}>
-        <MdLogout />
-        Logout
-      </button> */}
+      
     </div>
   );
 };
